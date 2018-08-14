@@ -1,8 +1,0 @@
-
-
-
-
-node文件组成:
-每个node.js文件都是一个模块;
-每个函数内部都是一个匿名自调函数;
-函数中有五个参数exports, require, module, __filename, __dirname
