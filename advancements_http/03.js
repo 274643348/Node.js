@@ -21,7 +21,7 @@ let server = http.createServer((req,res)=>{
    if (req.url === "/") {
         res.writeHead(200,{"Content-Type":"text/html;charset=UTF-8"});
         res.end("欢迎来到召唤师峡谷!!!");
-   }else if(req.url === "/mm.png"){
+   }else if(req.url === "/mm.pn"){
         fs.readFile("./advancements_http/mm.png",(err,data)=>{
             if (!err) {
                 res.writeHead(200,{"Content-Type":"image/png;charset=UTF-8"});
@@ -52,4 +52,4 @@ let server = http.createServer((req,res)=>{
 });
 
 //监听服务器
-server.listen(8000,"127.0.0.1");
+server.listen(8000,"172.16.0.86");
